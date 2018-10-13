@@ -1,6 +1,6 @@
 # Eye of Gnome Remote
 
-This application uses Eye of Gnome and CherryPy to stop, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change what is being rotated through.
+This application uses Eye of Gnome and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change what is being rotated through.
 
 # Setup
 
