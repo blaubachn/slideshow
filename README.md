@@ -54,4 +54,4 @@ python3 run.py
 
 # License
 
-MIT
+[MIT](https://github.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE.md)
