@@ -24,7 +24,7 @@ sudo snap install eog # install
 snap run eog          # test
 ```
 
-### standard installation
+### flatpak installation
 
 ```
 flatpak install flathub org.gnome.eog # install
