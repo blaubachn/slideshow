@@ -9,6 +9,7 @@ class Slideshow:
         self.directory = directory
 
     def start(self):
+        self.stop()
         if self.eog_install_type == 'Eye of Gnome':
             subprocess.Popen(['eog', '-s', self.directory])
         elif self.eog_install_type == 'Eye of Mate':
@@ -16,11 +17,8 @@ class Slideshow:
         elif self.eog_install_type == 'Eye of Gnome flatpak':
             subprocess.Popen(['flatpak', 'run', 'org.gnome.eog', '-s', self.directory])
         else:
-            print('Error: Eye of Gnome is not installed')
+            print('This type of installation is not yet supported')
 
     def stop(self):
         subprocess.run(['pkill', 'eog'])
-
-    def update(self):
-        self.stop()
-        self.start()
+        subprocess.run(['pkill', 'eom'])

@@ -37,10 +37,7 @@ index_html = """
     <div class="content">
       <h1>Slideshow</h1>
       <form action="/start" method = "POST">
-        <button type="submit">Start</button>
-      </form>
-      <form action="/update" method = "POST">
-        <button type="submit">Update</button>
+        <button type="submit">Start/Update</button>
       </form>
       <form action = "/stop" method = "POST">
         <button type = "submit">Stop</button>
@@ -63,12 +60,8 @@ class Remote(object):
     @cherrypy.expose
     def start(self):
         self.slideshow.start()
-        return index_html
-    @cherrypy.expose
-    def update(self):
-        self.slideshow.update()
-        return index_html
+        raise cherrypy.HTTPRedirect('/')
     @cherrypy.expose
     def stop(self):
         self.slideshow.stop()
-        return index_html
+        raise cherrypy.HTTPRedirect('/')
