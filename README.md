@@ -28,6 +28,7 @@ flatpak run org.gnome.eog             # test
 ```
 
 [Set up snaps](https://docs.snapcraft.io/t/installing-snapd/6735)
+
 [Set up flatpak and flathub](https://flathub.org/home)
 
 ### Eye of Mate installation
