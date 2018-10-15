@@ -19,15 +19,16 @@ sudo yum install eog # Install on Fedora/RHEL/...
 eog                  # test
 
 # Installation of Eye of Gnome using snap
-# Set up [snapd](https://docs.snapcraft.io/t/installing-snapd/6735)
 sudo snap install eog # install on any distro that supports snaps
 eog                   # test
 
 # Installation of Eye of Gnome using flatpak
-# Set up [flatpak and flathub](https://flathub.org/home)
 flatpak install flathub org.gnome.eog # install
 flatpak run org.gnome.eog             # test
 ```
+
+[Set up snaps](https://docs.snapcraft.io/t/installing-snapd/6735)
+[Set up flatpak and flathub](https://flathub.org/home)
 
 ### Eye of Mate installation
 
