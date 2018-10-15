@@ -59,7 +59,7 @@ class ConfigurationManagerGui(Gtk.Window):
         # Installation Combo
         #------------------------------------------------------------------------------
         installation_store = Gtk.ListStore(str)
-        installation_types = ['standard/snap', 'flatpak']
+        installation_types = configuration_manager.get_installation_types()
         for installation_type in installation_types:
             installation_store.append([installation_type])
         

@@ -1,34 +1,40 @@
-# Eye of Gnome Remote
+# Eye of Gnome/Mate Remote
 
-This application uses Eye of Gnome and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change what is being rotated through.
+This application uses Eye of Gnome or Eye of Mate and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change what is being rotated through.
 
 # Setup
 
-## Installing Eye of Gnome (eog)
+## Installing Eye of Gnome or Eye of Mate (eog/eom)
 
 If Eye of Gnome isn't already installed, here are a few options for installation.  
-You will need to know which method was used to install Eye of Gnome.
+You will need to know which method was used to install Eye of Gnome/Mate.
+**Note: Eye of Mate was included, because Eye of Gnome displays the menu bar in slideshow mode in Lubuntu which I am planning on using this for.**
 
-### standard installation
+### Eye of Gnome installation
 
 ```
+# Installation of Eye of Gnome
 sudo apt install eog # Install on Debian/Ubuntu/...
 sudo yum install eog # Install on Fedora/RHEL/...
 eog                  # test
-```
 
-### snapcraft.io installation
+# Installation of Eye of Gnome using snap
+# Set up [snapd](https://docs.snapcraft.io/t/installing-snapd/6735)
+sudo snap install eog # install on any distro that supports snaps
+eog                   # test
 
-```
-sudo snap install eog # install
-snap run eog          # test
-```
-
-### flatpak installation
-
-```
+# Installation of Eye of Gnome using flatpak
+# Set up [flatpak and flathub](https://flathub.org/home)
 flatpak install flathub org.gnome.eog # install
 flatpak run org.gnome.eog             # test
+```
+
+### Eye of Mate installation
+
+```
+sudo apt install eom # Install on Debian/Ubuntu/...
+sudo yum install eom # Install on Fedora/RHEL/...
+eom                  # test
 ```
 
 ## Installing Python and project dependencies
