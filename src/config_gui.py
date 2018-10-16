@@ -135,6 +135,7 @@ class ConfigurationManagerGui(Gtk.Window):
         )
 
     def on_cancel_button_clicked(self, button):
+        self.server_should_run.prevent()
         self.destroy()
 
     def on_save_and_start_button_clicked(self, button):
