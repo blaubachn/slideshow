@@ -57,7 +57,8 @@ sudo yum install python3-pip
 git clone https://github.com/blaubachn/eye_of_gnome_remote.git
 cd eye_of_gnome_remote
 python3 -m pip install cherrypy
-python3 run.py
+python3 src/run.py [--skipconfig]
+# The --skipconfig parameter starts up the server without displaying the configuration menu
 ```
 
 # License
