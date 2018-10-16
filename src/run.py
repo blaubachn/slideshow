@@ -1,6 +1,6 @@
 import sys
 from os.path import join, dirname, realpath
-from config_gui import ConfigurationManagerGui, Configuration_Manager
+from config_gui import Configuration_Manager
 from server_should_run import ServerShouldRun
 from slideshow import Slideshow
 from remote import Remote
@@ -11,6 +11,7 @@ if __name__ == '__main__':
     server_should_run = ServerShouldRun(skipconfig)
 
     if not skipconfig:
+        from config_gui import ConfigurationManagerGui
         settings_gui = ConfigurationManagerGui(configuration_manager, server_should_run)
         settings_gui.run()
 
