@@ -54,7 +54,7 @@ sudo yum install python3-pip
 ## Installing project and dependencies
 
 ```
-git clone https://github.com/blaubachn/eye_of_gnome_remote.git
+git clone https://gitlab.com/blaubachn/eye_of_gnome_remote.git
 cd eye_of_gnome_remote
 python3 -m pip install cherrypy
 python3 src/run.py [--skipconfig]
@@ -63,4 +63,4 @@ python3 src/run.py [--skipconfig]
 
 # License
 
-[MIT](https://github.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE.md)
+[MIT](https://gitlab.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE.md)
