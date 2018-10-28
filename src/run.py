@@ -7,7 +7,7 @@ from remote import Remote
 
 if __name__ == '__main__':
     configuration_manager = Configuration_Manager(join(dirname(realpath(__file__)), 'config.ini'))
-    skipconfig = len(sys.argv) > 1 and sys.argv[1] == '--skipconfig'
+    skipconfig = '--skipconfig' in sys.argv
     server_should_run = ServerShouldRun(skipconfig)
 
     if not skipconfig:
@@ -18,6 +18,7 @@ if __name__ == '__main__':
     if server_should_run.ask():
         settings = configuration_manager.get_config()
         slideshow = Slideshow(settings['directory'], settings['install'])
+        slideshow.start()
         remote = Remote(slideshow)
         remote.run()
         
