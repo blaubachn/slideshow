@@ -63,4 +63,4 @@ python3 src/run.py [--skipconfig]
 
 # License
 
-[MIT](https://gitlab.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE.md)
+[MIT](https://gitlab.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE)
