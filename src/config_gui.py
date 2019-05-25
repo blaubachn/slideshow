@@ -3,7 +3,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from config import Configuration_Manager
 
-about_text = '''Welcome to the Eye of Gnome Remote!
+about_text = '''Welcome to Slideshow!
 
 Photo Directory: The remote will diplay a slideshow of the photos in this folder (excluding photos in it's subfolders)
 Installation Type: flatpak commands have an extra prefix, so select the method you used for installation
@@ -18,7 +18,7 @@ class ConfigurationManagerGui(Gtk.Window):
         self.server_should_run = server_should_run
         current_configuration = self.configuration_manager.get_config()
 
-        Gtk.Window.__init__(self, title="Eye of Gnome Remote")
+        Gtk.Window.__init__(self, title="Slideshow")
         grid = Gtk.Grid()
         self.add(grid)
 

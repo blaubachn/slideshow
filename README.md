@@ -1,6 +1,6 @@
-# Eye of Gnome/Mate Remote
+# Slideshow
 
-This application uses Eye of Gnome or Eye of Mate and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change what is being rotated through.
+This application uses Eye of Gnome or Eye of Mate and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change the picture being rotated through.
 
 # Setup
 
@@ -54,8 +54,8 @@ sudo yum install python3-pip
 ## Installing project and dependencies
 
 ```
-git clone https://gitlab.com/blaubachn/eye_of_gnome_remote.git
-cd eye_of_gnome_remote
+git clone https://github.com/blaubachn/slideshow.git
+cd slideshow
 python3 -m pip install cherrypy
 python3 src/run.py [--skipconfig]
 # The --skipconfig parameter starts up the server without displaying the configuration menu
@@ -63,4 +63,4 @@ python3 src/run.py [--skipconfig]
 
 # License
 
-[MIT](https://gitlab.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE)
+[MIT](https://github.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE)
