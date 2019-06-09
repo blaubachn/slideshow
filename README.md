@@ -42,6 +42,10 @@ python3 src/run.py [--skipconfig]
 * [Eye of MATE](https://mate-desktop.org/#eye-of-mate)
 * [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/)
 
+## Contributors
+
+* [Nathan Blaubach](https://github.com/blaubachn)
+
 ## License
 
 [MIT](https://github.com/blaubachn/slideshow/blob/master/LICENSE)
