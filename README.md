@@ -1,57 +1,31 @@
 # Slideshow
 
-This application uses Eye of Gnome or Eye of Mate and CherryPy to start, update or stop a slideshow of pictures. The main use for it is being able to have a computer that is scanning a synced folder of some kind to be able to change the picture being rotated through.
+## Purpose
 
-# Setup
+This is a very customized project written to sit on top of either the Eye of Gnome or Eye of Mate slideshow feature. It stores a file directory and starts or stops a slideshow of the pictures at that location via a Cherry Py web server.
 
-## Installing Eye of Gnome or Eye of Mate (eog/eom)
+## Setup
 
-If Eye of Gnome isn't already installed, here are a few options for installation.  
-You will need to know which method was used to install Eye of Gnome/Mate.
-**Note: Eye of Mate was included, because Eye of Gnome displays the menu bar in slideshow mode in Lubuntu which I am planning on using this for.**
+Install the following software:
 
-### Eye of Gnome installation
+* [git](https://git-scm.com/downloads)
+* [Python](https://www.python.org/downloads/)
+* [pip](https://pip.pypa.io/en/stable/installing/)
+* Either [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye of MATE](https://mate-desktop.org/#eye-of-mate)
 
-```
-# Installation of Eye of Gnome
-sudo apt install eog # Install on Debian/Ubuntu/...
-sudo yum install eog # Install on Fedora/RHEL/...
-eog                  # test
+| Platform | Install Eye of GNOME | Install Eye of MATE |
+| --- | --- | --- |
+| Debian/Ubuntu/... | sudo apt install eog | sudo apt install eom |
+| Fedora | sudo dnf install eog | sudo dnf install eom |
+| Arch/Manjaro/... | sudo pacman -S eog | sudo pacman -S eom  |
+| snap - [setup](https://docs.snapcraft.io/t/installing-snapd/6735) | sudo snap install eog | Not Available (Yet...) |
+| flatpak and flathub - [setup](https://flatpak.org/setup/) | flatpak install flathub org.gnome.eog | Not Available (Yet...) |
 
-# Installation of Eye of Gnome using snap
-sudo snap install eog # install on any distro that supports snaps
-eog                   # test
+**You will need to know which method was used to install Eye of Gnome (package from distro/snap/flatpak).**
 
-# Installation of Eye of Gnome using flatpak
-flatpak install flathub org.gnome.eog # install
-flatpak run org.gnome.eog             # test
-```
+**While the project was orignially targeted towards Eye of GNOME, Eye of MATE was included because Eye of GNOME displays the menu bar in slideshow mode in Lubuntu which I am using this for. You may want to try out both just to see if you have any issues with either one**
 
-[Set up snaps](https://docs.snapcraft.io/t/installing-snapd/6735)
-
-[Set up flatpak and flathub](https://flathub.org/home)
-
-### Eye of Mate installation
-
-```
-sudo apt install eom # Install on Debian/Ubuntu/...
-sudo yum install eom # Install on Fedora/RHEL/...
-eom                  # test
-```
-
-## Installing Python and project dependencies
-
-```
-# Install on Debian/Ubuntu/...
-sudo apt install python3 
-sudo apt install python3-pip
-
-# Install on Fedora/RHEL/...
-sudo yum install python3 
-sudo yum install python3-pip
-```
-
-## Installing project and dependencies
+Run the following commands in your terminal:
 
 ```
 git clone https://github.com/blaubachn/slideshow.git
@@ -61,6 +35,13 @@ python3 src/run.py [--skipconfig]
 # The --skipconfig parameter starts up the server without displaying the configuration menu
 ```
 
-# License
+## Dependencies
 
-[MIT](https://github.com/blaubachn/eye_of_gnome_remote/blob/master/LICENSE)
+* [Python](https://www.python.org/)
+* [CherryPy](https://cherrypy.org/)
+* [Eye of MATE](https://mate-desktop.org/#eye-of-mate)
+* [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/)
+
+## License
+
+[MIT](https://github.com/blaubachn/slideshow/blob/master/LICENSE)
