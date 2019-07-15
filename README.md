@@ -18,7 +18,7 @@ python3 src/run.py [--skipconfig]
 # The --skipconfig parameter starts up the server without displaying the configuration menu
 ```
 
-### Eye of Gnome/Eye of Mate Installation
+## Eye of Gnome/Eye of Mate Installation
 | Platform | Install Eye of GNOME | Install Eye of MATE |
 | --- | --- | --- |
 | Debian/Ubuntu/... | sudo apt install eog | sudo apt install eom |
