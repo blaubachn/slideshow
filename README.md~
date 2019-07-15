@@ -2,11 +2,16 @@
 
 ## Purpose
 
-This is a very customized project written to sit on top of either the Eye of Gnome or Eye of Mate slideshow feature. It stores a file directory and starts or stops a slideshow of the pictures at that location via a Cherry Py web server. While the project was originally targeted only towards Eye of GNOME, Eye of MATE was included because Eye of GNOME displays the menu bar in slideshow mode in Lubuntu which I am using this for. You may want to try out both just to see if you have any issues with either one.
+This is a very customized project written to sit on top of either the Eye of Gnome or Eye of Mate slideshow feature. It stores a file directory and starts or stops a slideshow of the pictures at that location via a Cherry Py web server.
 
 ## Setup
 
-Install either [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye of MATE](https://mate-desktop.org/#eye-of-mate)
+Install the following software:
+
+* [git](https://git-scm.com/downloads)
+* [Python](https://www.python.org/downloads/)
+* [pip](https://pip.pypa.io/en/stable/installing/)
+* Either [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye of MATE](https://mate-desktop.org/#eye-of-mate)
 
 | Platform | Install Eye of GNOME | Install Eye of MATE |
 | --- | --- | --- |
@@ -18,8 +23,9 @@ Install either [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye o
 
 **You will need to know which method was used to install Eye of Gnome (package from distro/snap/flatpak).**
 
-Install [git](https://git-scm.com/downloads), [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/)
-Check out this repository and dependencies using the following commands in your terminal:
+**While the project was orignially targeted towards Eye of GNOME, Eye of MATE was included because Eye of GNOME displays the menu bar in slideshow mode in Lubuntu which I am using this for. You may want to try out both just to see if you have any issues with either one**
+
+Run the following commands in your terminal:
 
 ```
 git clone https://github.com/blaubachn/slideshow.git
