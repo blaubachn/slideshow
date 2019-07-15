@@ -30,7 +30,7 @@ Run the following commands in your terminal:
 ```
 git clone https://github.com/blaubachn/slideshow.git
 cd slideshow
-python3 -m pip install --upgrade -r requirements.txt
+python3 -m pip install cherrypy
 python3 src/run.py [--skipconfig]
 # The --skipconfig parameter starts up the server without displaying the configuration menu
 ```
