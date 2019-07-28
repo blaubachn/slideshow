@@ -6,10 +6,7 @@ This is a very customized project written to sit on top of either the Eye of Gno
 
 ## Setup
 
-1. Install either [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye of MATE](https://mate-desktop.org/#eye-of-mate) using the chart below
-2. Install [git](https://git-scm.com/downloads), [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/)
-3. Check out this repository and dependencies using the following commands in your terminal:
-
+Install [Eye of GNOME](https://wiki.gnome.org/Apps/EyeOfGnome/) or [Eye of MATE](https://mate-desktop.org/#eye-of-mate) (see chart below), [git](https://git-scm.com/downloads), [Python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/). Then, if you understand them, run the following commands in your terminal:
 ```
 git clone https://github.com/nathanblaubach/slideshow.git
 cd slideshow
