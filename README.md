@@ -11,7 +11,7 @@ This is a very customized project written to sit on top of either the Eye of Gno
 3. Check out this repository and dependencies using the following commands in your terminal:
 
 ```
-git clone https://github.com/blaubachn/slideshow.git
+git clone https://github.com/nathanblaubach/slideshow.git
 cd slideshow
 python3 -m pip install --upgrade -r requirements.txt
 python3 src/run.py [--skipconfig]
@@ -36,8 +36,8 @@ python3 src/run.py [--skipconfig]
 
 ## Contributors
 
-* [Nathan Blaubach](https://github.com/blaubachn)
+* [Nathan Blaubach](https://github.com/nathanblaubach)
 
 ## License
 
-[MIT](https://github.com/blaubachn/slideshow/blob/master/LICENSE)
+[MIT](https://github.com/nathanblaubach/slideshow/blob/master/LICENSE)
